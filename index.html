@@ -14,15 +14,15 @@
 <body>
    <!--- Building the header section---> 
    <div class="container">
-    <div class="header">
+    <div id="header" class="header">
         <div class="logo">
-            <h1>LOGO </h1>
-            <svg onclick="displayMenu()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bars">
+            <h1>LOGO <span>HERE</span> </h1>
+            <svg id="bars"   onclick="displayMenu()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bars">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
               
         </div>
-        <div class="nav-items hidden" >
+        <div id="navbar"   class="nav-items hidden" >
             <ul id="target">
                                                             
                 <li><a href="#">Home</a></li>
@@ -73,7 +73,7 @@
 
         <div class="whychose">
             <div class="grid-items">
-                <div class="grid-item1">
+                <div class="grid-item1  grid-text">
                     <h2>Why choose Us?</h2>
                     <p>Whether you're looking to switch to solar energy or upgrade your cable services, our sales and marketing company is here to help</p>
                 </div>
@@ -120,7 +120,7 @@
                     </div>
                     <div class="wo-main2">
                      
-                        <img class="img2" src="/images/slide1.jpg" alt="" srcset="">
+                        <img id="img2"   class="img2" src="/images/slide1.jpg" alt="" srcset="">
                         <img class="img1"  src="/images/slide 2.jpg" alt="" srcset="">
                       
                     </div>
