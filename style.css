@@ -621,3 +621,14 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: none;
 }
 /* media querries*/
+@media (max-width: 1024px){
+    .wo-main{
+        flex-direction: column;
+    }
+    .wo-main1{
+        margin-right: 0px;
+    }
+    .wo-main2{
+        margin-right: 0px;
+    }
+}
