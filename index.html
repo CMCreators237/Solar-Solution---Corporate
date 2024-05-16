@@ -17,13 +17,13 @@
     <div class="header">
         <div class="logo">
             <h1>LOGO </h1>
-            <svg onclick="displayMenu()"     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bars">
+            <svg onclick="displayMenu()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bars">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
               
         </div>
         <div class="nav-items hidden" >
-            <ul id="target" class="nav-items hidden"   >
+            <ul id="target">
                                                             
                 <li><a href="#">Home</a></li>
                 <li><a href="#">ABOUT US</a></li>
@@ -46,7 +46,7 @@
 
       <!--- expert section---> 
       <div class="section">
-        
+         <h1>Our Expertise and Experience</h1>
         <div class="expert">
            
             <div class="expert-content1 expert-text ">
@@ -236,16 +236,13 @@
     
     
     
-        const target = document.querySelector('.nav-items');
-        const hidden = document.querySelector('.hidden');
-        function displayMenu(){
-           if(target.classList.contains('hidden')){
-            target.classList.remove('hidden');
-           }else{
-            target.classList.add('hidden');
-           }
-        
-        }
-      
+const target = document.querySelector('.nav-items');
+function displayMenu() {
+   if (target.classList.contains('hidden')) {
+      target.classList.remove('hidden');
+   } else {
+      target.classList.add('hidden');
+   }
+}    
 </script>
 </html>
