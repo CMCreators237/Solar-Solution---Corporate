@@ -62,7 +62,7 @@ jobs:
       # Run Prettier           #
       ##########################
       - name: Run Prettier
-        run: npx prettier --config assets/prettierrc.json --check .
+        run: npx prettier --config .prettierrc.yaml --check .
 
       ################################
       # Run Linter against code base #
@@ -71,8 +71,12 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
-          # Change to 'master' if your main branch differs
+          # Change to 'main' if your main branch differs
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LINTER_RULES_PATH: assets/prettierrc.json
+          LINTER_RULES_PATH: .prettierrc.yaml
           VALIDATE_YAML: true
+          VALIDATE_MARKDOWN: true
+          VALIDATE_JSON: true
+          VALIDATE_JS: true
+          VALIDATE_TS: true
